@@ -1,26 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ContentContainer from './components/ContentContainer' ;
+import Accordian from './components/accordian'
+const App = (props) => (
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <React.Fragment>
+        <ContentContainer>
+            <Accordian title='I am accordian' defaultIsOpen = {true} >
+                <div>random content  Excepteur enim quis sint enim laboris excepteur. Anim adipisicing ea ex commodo officia velit qui nulla dolor veniam magna. Anim est nulla magna quis consectetur sit velit ipsum pariatur quis magna laborum do ipsum. Proident anim sit officia aliquip veniam Lorem duis est sunt labore. Ipsum duis occaecat fugiat cupidatat sit dolore ex pariatur aliquip. Tempor occaecat ipsum labore excepteur veniam.</div>
+            </Accordian>
+        </ContentContainer>
+    </React.Fragment>
+)
 
 export default App;
